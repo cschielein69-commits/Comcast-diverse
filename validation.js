@@ -498,3 +498,40 @@ document.addEventListener("DOMContentLoaded", function () {
       break;
   }
 });
+
+// =========================
+// THANK YOU POPUP
+// =========================
+
+// Show popup after 5 seconds
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const popup = document.getElementById("thankYouPopup");
+
+        if (popup) {
+            popup.style.display = "flex";
+        }
+
+    }, 5000);
+
+});
+
+
+// Close popup
+document.addEventListener("DOMContentLoaded", function () {
+
+    const closeBtn = document.getElementById("closePopupBtn");
+
+    if (closeBtn) {
+
+        closeBtn.addEventListener("click", function () {
+
+            document.getElementById("thankYouPopup").style.display = "none";
+
+        });
+
+    }
+
+});

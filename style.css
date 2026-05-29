@@ -470,22 +470,19 @@ input:focus {
 
 @media (max-width: 768px) {
 
-  .home-page .page-container {
-    flex-direction: column;
+  .page-container {
+    display: flex;
+    flex-direction: column !important;
   }
 
-  .home-page .form-section,
-  .home-page .image-section {
+  .image-section {
+    flex: none;
     width: 100%;
   }
 
-  .home-page .form-section {
-    padding: 2rem 1rem;
-  }
-
-  .home-page .image-section img {
+  .image-section img {
     width: 100%;
-    height: 180px;
+    height: 180px !important;
     object-fit: cover;
     display: block;
   }

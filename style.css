@@ -358,7 +358,7 @@ input:focus {
 
 .image-section img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   display: block;
 }
@@ -471,25 +471,11 @@ input:focus {
 @media (max-width: 768px) {
 
   .page-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 
   .image-section {
-    flex: none;
-    width: 100%;
-    margin: 1.5rem 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .image-section img {
-    width: 90%;
-    max-width: 320px;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
+    display: none;
   }
 
 }

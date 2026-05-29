@@ -467,3 +467,27 @@ input:focus {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+
+  .home-page .page-container {
+    flex-direction: column;
+  }
+
+  .home-page .form-section,
+  .home-page .image-section {
+    width: 100%;
+  }
+
+  .home-page .form-section {
+    padding: 2rem 1rem;
+  }
+
+  .home-page .image-section img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+}
